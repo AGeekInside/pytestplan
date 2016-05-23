@@ -22,8 +22,6 @@ def gen_plan():
     '''Creates a test plan based off the test configuration.'''
 
     test_conf = settings.test_conf
-    pprint(test_conf)
-
     test_plan = {
         "num_chars": 0,
         "num_tests": 0,
@@ -45,11 +43,22 @@ def gen_plan():
     return test_plan
 
 
+def output_plan(test_plan):
+    '''Outputs the test plan.'''
+
+    print('Test Plan')
+    print('='*9)
+
+    for i, tc in enumerate(test_plan['test_cases']):
+        print('TC%i: %s' % (i, tc))
+
+
 def main():
     '''Main class for the phishstorm analytic.'''
 
     settings.test_conf = load_conf()
-    pprint(settings.test_conf)
+    test_plan = gen_plan()
+    output_plan(test_plan)
 
 
 if __name__ == '__main__':
