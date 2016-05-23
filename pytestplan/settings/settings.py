@@ -2,18 +2,18 @@ import socket
 import sys
 
 HOSTNAME = socket.gethostname().lower().split('.')[0].replace('-', '')
-print("HOSTNAME = %s" % HOSTNAME)
+# print("HOSTNAME = %s" % HOSTNAME)
 
+test_conf_file = 'conf/test_conf.json'
 
 
 try:
     exec "from host_%s import *" % HOSTNAME
     print("imported host_%s" % HOSTNAME)
-    print("proj_dir = %s" % proj_dir)
 except ImportError, e:
     e = sys.exc_info()[0]
-    #print("Error: %s" % e)
-    #print("Failed to import host_%s" % HOSTNAME)
+    # print("Error: %s" % e)
+    # print("Failed to import host_%s" % HOSTNAME)
     pass
 
 try:
