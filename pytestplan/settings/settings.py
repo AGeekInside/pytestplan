@@ -4,7 +4,8 @@ import sys
 HOSTNAME = socket.gethostname().lower().split('.')[0].replace('-', '')
 # print("HOSTNAME = %s" % HOSTNAME)
 
-test_conf_file = 'conf/test_conf.json'
+# test_conf_file = 'conf/phishstorm_tests.json'
+test_conf_file = 'conf/multi_overrides_conf.json'
 
 
 try:

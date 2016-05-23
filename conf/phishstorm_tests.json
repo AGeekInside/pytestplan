@@ -1,0 +1,50 @@
+{
+    "characteristics": [
+        {
+            "name": "url_validity",
+            "overrides": "False",
+            "values": [
+                "True",
+                "False"
+            ]
+        },
+        {
+            "name": "url_w_ps",
+            "values": [
+                "True",
+                "False"
+            ]
+        },
+        {
+            "name": "url_w_mld",
+            "values": [
+                "True",
+                "False"
+            ]
+        },
+        {
+            "name": "mld_in_1M",
+            "values": [
+                "True",
+                "False"
+            ]
+        },
+        {
+            "name": "input_file_exists",
+            "overrides": "False",
+            "values": [
+                "True",
+                "False"
+            ]
+        },
+        {
+            "name": "url_rem_cnt",
+            "values": [
+                "0",
+                "1",
+                ">1"
+            ]
+        }
+
+    ]
+}

@@ -15,14 +15,6 @@
                 "True",
                 "False"
             ]
-        },
-        {
-            "name": "C4",
-            "overrides": "True",
-            "values": [
-                "True",
-                "False"
-            ]
         }
     ]
 }
